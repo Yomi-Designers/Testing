@@ -1,0 +1,272 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+@font-face {
+    font-family: Poppins;
+    src: url(../FONT/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-M;
+    src: url(../FONT/Poppins-Medium.ttf);
+}
+
+/* Home wrapper */
+.wrapper-home {
+    width: 100%;
+    height: 45rem;
+    background-color: #f0f0ff;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Nav wrapper */
+.top-nav {
+    width: 100%;
+    height: 4rem;
+    background-color: #ffffff;
+    border-bottom: 1.5px solid #d1cefc;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+}
+
+.nav-1:nth-child(1) {
+    width: 15%;
+    height: 4rem;
+}
+
+.nav-1:nth-child(2) {
+    width: 50%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+    .nav-1:nth-child(2) li a {
+        padding: 22px 28px;
+        text-decoration: none;
+        font-family: Poppins-M;
+        font-size: 14px;
+        color: #626287;
+    }
+
+    .nav-1:nth-child(2) li a:hover {
+        color: #303051;
+    }
+
+.nav-1:nth-child(3) {
+    width: 35%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4rem;
+}
+
+    .nav-1:nth-child(3) a.contact-btn {
+        text-decoration: none;
+        font-family: Poppins-M;
+        font-size: 14px;
+        color: #ffffff;
+        border-radius: 4px;
+        padding: 13px 20px;
+        background-color: #665DFE;
+    }
+
+    .nav-1:nth-child(3) img {
+        width: 18px;
+        margin-right: 2rem;
+    }
+
+.blue-circle {
+    width: 70rem;
+    height: 70rem;
+    right: -42rem;
+    top: -10rem;
+    position: absolute;
+    background-color: #665DFE;
+    border-radius: 50%;
+}
+
+/* Text wrapper */
+.text-wrapper {
+    width: 34rem;
+    height: 35rem;
+    margin: 8rem 0 0 7rem;
+    font-family: Poppins;
+}
+
+    .rated-text {
+        font-size: 14px;
+        color: #303051;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+
+        .rated-text span {
+            border-radius: 4px;
+            background-color: #FFEBA1;
+            padding: 1px 10px;
+            font-weight: bold;
+            color: #DB6D0A;
+        }
+
+    .pitch-text {
+        font-size: 4rem;
+        font-family: Poppins-M;
+        color: #303051;
+        margin-bottom: 2.5rem;
+        line-height: 70px;
+    }
+
+    .catch-text {
+        font-size: 30px;
+        color: #8780FE;
+        margin-bottom: 1.5rem;
+        line-height: 35px;
+    }
+
+    .text {
+        font-weight: 100;
+        color: #9595c8;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+
+    .links-text a:nth-child(1) {
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #ffffff;
+        padding: 13px 35px;
+        background-color: #665DFE;
+        font-family: Poppins-M;
+        margin-right: 25px;
+    }
+
+    .links-text a:nth-child(2) {
+        padding: 13px 40px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 14px;
+        background-color: #e4e2ff;
+        font-family: Poppins-M;
+        color: #665DFE;
+    }
+
+/* Sponsor wrapper */
+.sponsor-wrapper{
+    width: 100%;
+    height: 13rem;
+}
+
+/* Section1-wrapper */
+.section1-wrapper {
+    width: 100%;
+    height: 45rem;
+    background-color: #f0f0ff;
+}
